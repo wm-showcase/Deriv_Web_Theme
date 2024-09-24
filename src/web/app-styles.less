@@ -1,0 +1,357 @@
+// lin-height 
+
+
+  .lh-18.app-label {
+    line-height: var(--lh-18);
+  }
+
+  .lh-18-2.app-label {
+    line-height: var(--lh-18-2);
+  }
+  
+  .lh-15-6.app-label {
+    line-height: var(--lh-15-6);
+  }
+  
+  .lh-20-8.app-label {
+    line-height: var(--lh-20-8);
+  }
+  
+  .lh-27.app-label {
+    line-height: var(--lh-27);
+  }
+  
+  .lh-36-77.app-label {
+    line-height: var(--lh-36-77);
+  }
+  
+  .lh-19-5.app-label {
+    line-height: var(--lh-19-5);
+  }
+  
+  .lh-31-2.app-label {
+    line-height: var(--lh-31-2);
+  }
+  
+  .lh-21.app-label {
+    line-height: var(--lh-21);
+  }
+
+  .lh-41-3.app-label {
+    line-height: var(--lh-41-3);
+  }
+  
+//header
+
+
+.wm-email-icon{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-right: 6px;
+}
+.wm-user-info-wrapper{
+  border: 1px solid rgba(231, 233, 233, 1);
+  background-color: rgba(242, 243, 244, 1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: auto;
+  // margin-left: 2.5em;
+  display: inline-flex;
+  align-items: center;
+  .app-container{
+  display: inline-flex;
+  align-items: center;
+  +.app-container{
+    margin-left: 6px;
+    padding-left: 6px;
+    border-left: 1px solid var(--wm-separator-color);
+  }
+  }
+}
+//Account summary
+.app-select-wrapper .app-select.wm-select-month{
+    border: 1px solid var(--wm-input-border-color);
+    padding: var(--wm-select-spacing) ;
+    // margin-left: 1.75rem;
+}
+
+.input-group .form-control.app-search-input{
+    padding: var(--wm-search-spacing);
+    border: 1px solid var(--wm-input-border-color);
+    background-color: var(--wm-input-bg);
+    font-size:var(--wm-h6-font-size);
+    font-weight: var(--wm-font-weight-regular);
+    line-height: 26px;
+    color: var(--wm-text-muted);
+    .placeholder(@color:var(--wm-input-search-place-holder));
+}
+
+.app-search {
+    .form-control {
+     .placeholder(@color:var(--wm-input-search-place-holder));
+    }
+ }
+
+ .app-container.wm-account-list-header {
+    padding: 12px 32px;
+    background: rgba(242, 243, 244, 1);
+    border-radius:  var( --border-radius-16) var( --border-radius-16)  0 0;
+    border: 1px solid rgba(231, 233, 233, 1);
+}
+
+.app-livelist.app-panel.media-list.wm-summery-list {
+    box-shadow: none;
+    max-height: ~"calc(100vh - 290px)";
+    overflow: auto;
+    padding-bottom: .25rem;
+      /* Scrollbar Styles */
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 8px; 
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+    }
+
+    &::-webkit-scrollbar-track {
+    
+    }
+    .app-livelist{
+        box-shadow: none;
+        ul li.app-list-item{
+            border: 1px solid #e7e9e9;
+            border-radius: 0;
+            border-width: 0px 0px 1px 0px;
+            padding: var(--wm-space-4) var(--wm-space-8);
+            &:last-child{
+                // border-width: 0px;
+            }
+        }
+    }
+
+    ul li.app-list-item{
+        border: 1px solid #e7e9e9;
+        border-width: 0px 1px 1px 1px;
+        border-radius: var(--border-radius-16);
+        overflow: hidden;
+        +li.app-list-item{
+            margin-top: var(--wm-space-4);
+        }
+    }
+
+}
+
+
+.app-grid-column.col-balance:has(.app-linear-layout[hidden]){
+  display: none;
+}
+// account details page
+
+.app-grid.app-panel.panel.wm-transaction-table.panel{
+    margin-top: 20px;
+    height: ~"calc(100vh - 232px)";
+    overflow: auto;
+    box-shadow: none;
+}
+
+.app-grid.app-panel.panel.wm-transaction-table.panel .panel-footer{
+  padding: 3rem 0;
+  position: fixed;
+  left: auto;
+  bottom: 0;
+  max-width: var(--wm-screen-max-width);
+  margin: 0 auto;
+  display: block;
+}
+.app-grid .app-datagrid .app-grid-header .app-grid-header-inner th.app-datagrid-header-cell .header-data {
+    cursor: pointer;
+    font-family: "Inter";
+    font-size: var(--wm-h6-font-size);
+    font-weight: var(--wm-font-weight-semibold);
+    line-height: var(--lh-18);
+    text-align: left;
+}
+ .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    padding: 10px 20px;
+ }
+ .app-grid .table tbody tr td {
+    border-top: 1px solid rgba(231, 233, 233, 0.5)
+ }
+
+
+ .app-grid .table tbody tr td.wm-table-date,.app-grid .table tbody tr td.wm-table-date .app-label{
+    font-size: var(--wm-h5-font-size);
+    font-weight: var(--wm-font-weight-regular);
+    line-height: var(--lh-21);
+ }
+
+ .app-grid .table tbody tr td.wm-table-desc, .app-grid .table tbody tr td.wm-table-desc .app-label{
+    font-size: var(--wm-font-13);
+    font-weight: var(--wm-font-weight-regular);
+    line-height: var(--lh-21);
+    text-transform: capitalize;
+
+ }
+ .app-grid .table tbody tr td.wm-table-ref,.app-grid .table tbody tr td.wm-table-ref .app-label{
+    font-size: var(--wm-font-13);
+    font-weight: var(--wm-font-weight-regular);
+    line-height: var(--lh-21);
+ }
+
+ 
+ .app-grid .table tbody tr td.wm-table-wd, .app-grid .table tbody tr td.wm-table-wd .app-label{
+    font-size: var(--wm-font-13);
+    font-weight:var(--wm-font-weight-semibold);
+    line-height: var(--lh-21);
+    color: var(--wm-color-primary);
+    
+ }
+
+ .app-grid .table tbody tr td.wm-table-deposit, .app-grid .table tbody tr td.wm-table-deposit .app-label{
+    font-size: var(--wm-h5-font-size);
+    font-weight: var(--wm-font-weight-semibold);;
+    line-height: var(--lh-21);
+    color: var(--wm-color-success);
+ }
+ .app-grid .table tbody tr td.wm-table-balance,.app-grid .table tbody tr td.wm-table-balance .app-label{
+    font-size: var(--wm-font-13);
+    font-weight:var(--wm-font-weight-semibold);
+    line-height: var(--lh-21);
+    color:var(--wm-text-muted);
+
+ }
+
+
+ .app-datanavigator .pagination.basic .pagination-next a:before, .app-datanavigator ul.pagination.basic .pagination-next a:before {
+    content: "\e900";
+    font-family: "icomoon";
+    font-size: var(--wm-h6-font-size);
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+.app-datanavigator ul.pagination.basic .pagination-prev a:before{
+    content: "\e901";
+    font-family: 'icomoon';
+    font-size: var(--wm-h6-font-size);
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+.wm-login-wrapper.app-container{
+    padding: 2rem 5rem;
+    box-shadow: 0px 20px 200px 20px rgba(0, 0, 0, 0.05);
+    border-radius: var(--border-radius-large);
+
+    .btn {
+        .app-icon {
+            padding: 0;
+            font-size: 24px;
+            position: absolute;
+            left: 12px;
+        }
+        .button-image-icon{
+            position: absolute;
+            left: 12px;
+            width: 24px;
+            height: 24px;
+        }
+        +.btn{
+            margin-top: .5rem;
+        }
+    }
+
+    input.form-control{
+     border: 1px solid  rgba(203, 202, 215, 1);
+     padding: 14px 16px;
+     border-radius: 8px;
+     .placeholder(@color:var(--wm-input-search-place-holder));
+    }
+  .app-container+.app-container{
+    margin-top: 8px;
+  }
+  .app-login .app-form.app-login-form .app-login-button {
+    margin-top: 1rem;
+}
+}
+
+.app-label.text-seprator{
+    display:flex;
+    align-items: center;
+    &::before,&::after{
+        display: inline-block;
+        content:"";
+        min-width: 43.52%;
+        position: relative;
+        height:1px;
+        border-top: 1px solid var(--wm-separator-color);
+        background: var(--wm-separator-color);
+    }
+    &::before{
+        margin-right: .75rem;
+    }
+    &::after{
+        margin-left: .75rem;
+    }
+}
+
+
+.wm-chat-wrapper {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 14px;
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+
+.wm-chat-container {
+  position: fixed;
+  bottom: 26px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-label.text-live {
+  letter-spacing: -0.5px;
+  margin-top: 4px;
+}
+
+.app-label.text-live::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: Var(--wm-color-success);
+  display: inline-block;
+  margin-right: 4px;
+}
+
+
+.app-container.wm-search-empty-state-wrapper {
+  border: 1px solid rgba(231, 233, 233, 1);
+  border-radius: 16px;
+  min-height: ~"calc(100vh - 180px)";
+  display: flex;
+  align-items: center;
+  padding: 0 25rem;
+  margin: 20px auto;
+}
+
+// [content="partialLogout"].app-container{
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
